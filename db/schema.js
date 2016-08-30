@@ -1,9 +1,11 @@
 var mongoose = require('mongoose')
-var schema = mongoose.Schema,
+var Schema = mongoose.Schema,
   ObjectId = Schema.ObjectId
 
-var VictmsSchema = new Schema({
-  body: String
+var VictimSchema = new Schema({
+  name: String,
+  image: String,
+  insult: String
 })
 
 mongoose.model("Victim", VictimSchema)
