@@ -17,4 +17,8 @@ app.listen(4000, function(){
 
 app.get("/victim", victimController.index)
 app.get("/victim/new", victimController.new)
+app.post("/victim", victimController.create)
 app.get("/victim/:id", victimController.show)
+app.get("/victim/:id/edit", victimController.edit)
+app.put("/victim/:id", victimController.update)
+app.delete("/victim/:id", victimController.delete)

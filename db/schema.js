@@ -9,3 +9,4 @@ var VictimSchema = new Schema({
 })
 
 mongoose.model("Victim", VictimSchema)
+module.exports = mongoose;
