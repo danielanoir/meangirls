@@ -16,3 +16,5 @@ app.listen(4000, function(){
 })
 
 app.get("/victim", victimController.index)
+app.get("/victim/new", victimController.new)
+app.get("/victim/:id", victimController.show)

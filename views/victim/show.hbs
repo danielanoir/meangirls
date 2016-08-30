@@ -1,0 +1,17 @@
+<h2>{{victim.name}}</h2>
+<div>
+  <!-- {{#each victim}} -->
+  <div class="victim-show-each">
+    <p>{{body}}</p>
+    <!-- {{/each}} -->
+
+    <form method="post" action="/victim/{{../victim._id}}?_method=delete">
+      <input type="submit" value="Made Peace/Remove">
+    </form>
+  </div>
+</div>
+
+<div id="victim-edit">
+  <a href="/victim/{{victim._id}}/edit">Edit</a>
+  <a href="/victim">Back</a>
+</div>
